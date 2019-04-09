@@ -9,6 +9,7 @@ namespace GIS_API.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
         public string Category { get; set; }
+        public string Name { get; set; }
         [DataType(DataType.DateTime)]
         public DateTime Timestamp {get; set;}
         public decimal Longitude {get; set;}
