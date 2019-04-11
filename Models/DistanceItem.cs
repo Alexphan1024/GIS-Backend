@@ -8,7 +8,7 @@ namespace GIS_API.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
-        public long Name { get; set; }
+        public string Name { get; set; }
         public decimal CLongitude {get; set;}
         public decimal CLatitude {get; set;}
         public decimal LLongitude {get; set;}
