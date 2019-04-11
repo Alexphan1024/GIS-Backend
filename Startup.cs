@@ -55,6 +55,12 @@ namespace GIS_API
                 routeTemplate: "api/{controller}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Routes.MapHttpRoute(
+                name: "DistanceApi",
+                routeTemplate: "api/{controller}/calculation",
+                defaults: new { id = RouteParameter.Optional }
+            );
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

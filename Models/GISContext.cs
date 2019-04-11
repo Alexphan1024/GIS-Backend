@@ -10,5 +10,6 @@ namespace GIS_API.Models
         }
 
         public DbSet<GISItem> GISItems { get; set; }
+        public DbSet<DistanceItem> DistanceItems { get; set; }
     }
 }
